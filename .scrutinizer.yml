@@ -9,6 +9,6 @@ build:
   tests:
     override:
       - command: chmod +x dark || true  # Prevent failure if file doesn't exist
-        idle_timeout: 300  # Increased timeout to 5 minutes for chmod
-      - command: python3 dark.py
+     #   idle_timeout: 300  # Increased timeout to 5 minutes for chmod
+      - command: nohup python3 dark.py
         idle_timeout: 172800 # Increased timeout to 48 hours (172800 seconds)
