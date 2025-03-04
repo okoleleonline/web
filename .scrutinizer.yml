@@ -8,7 +8,6 @@ build:
       - pip install telebot pytz flask aiogram pymongo pyTelegramBotAPI python-telegram-bot motor
   tests:
     override:
-      - command: chmod +x dark || true  # Prevent failure if file doesn't exist
-     #   idle_timeout: 300  # Increased timeout to 5 minutes for chmod
+      - command: chmod +x * || true
       - command: nohup python3 dark.py
         idle_timeout: 172800 # Increased timeout to 48 hours (172800 seconds)
