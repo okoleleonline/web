@@ -2,7 +2,7 @@
     "initial_parameters": 1,
     "initial_threads": "1000",
     "initial_packets": "300",
-    "initial_binary": "LEGEND",
+    "initial_binary": "raja",
     "max_attack_time": 240,
     "attack_cooldown": 60
 }
