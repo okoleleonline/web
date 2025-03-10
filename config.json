@@ -1,8 +1,8 @@
 {
-    "initial_parameters": 1,
-    "initial_threads": "1000",
+    "initial_parameters": 2,
+    "initial_threads": "900",
     "initial_packets": "300",
-    "initial_binary": "raja",
+    "initial_binary": "NINJAMODS",
     "max_attack_time": 240,
     "attack_cooldown": 60
 }
