@@ -1,8 +1,8 @@
 {
-    "initial_parameters": 2,
+    "initial_parameters": 3,
     "initial_threads": "900",
     "initial_packets": "300",
-    "initial_binary": "NINJAMODS",
+    "initial_binary": "dark",
     "max_attack_time": 240,
     "attack_cooldown": 60
 }
